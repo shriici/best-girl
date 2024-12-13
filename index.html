@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Увидеть буську</title>
+    <style>
+        /* Для фона и шрифта */
+        body {
+            font-family: 'Comic Sans MS', sans-serif; /* Милый шрифт */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+            background-color: #FFD1DC; /* Нежно-розовый фон */
+        }
+
+        /* Для кнопки */
+        #btn {
+            font-size: 20px;
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: #FFB6C1; /* Светло-розовый цвет кнопки */
+            border: none;
+            border-radius: 8px; /* Округлые углы кнопки */
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        #btn:hover {
+            background-color: #FF69B4; /* При наведении более яркий розовый */
+        }
+
+        /* Для картинки */
+        #photo {
+            display: none;
+            margin-top: 20px;
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Увидеть буську</h1>
+    <button id="btn">Нажми, чтобы увидеть буську</button>
+    <img id="photo" src="bуська.jpg" alt="Буська" />
+    
+    <script>
+        const btn = document.getElementById('btn');
+        const photo = document.getElementById('photo');
+        
+        btn.onclick = function() {
+            photo.style.display = 'block'; // Показываем фотографию
+        };
+    </script>
+</body>
+</html>
